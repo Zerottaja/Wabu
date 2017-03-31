@@ -16,7 +16,8 @@ def wabu():
         year = str(time.localtime()[0])
 
         os.system("date -s '{} {} {} {}:{}:{}'".format(day, kk, year, h, min, sec))
-        time.sleep(3600)
+
+        time.sleep(random.randint(1,3600))
     # date -s "2 OCT 2006 18:00:00"
     # os.system("bashCommand")
 
